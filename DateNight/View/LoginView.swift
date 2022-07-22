@@ -6,27 +6,16 @@
 //
 
 import SwiftUI
-import FirebaseCore
-import FirebaseFirestore
-import FirebaseAuth
-import FBSDKLoginKit
-import Firebase
-import FBSDKCoreKit
 
-class AppDelegate: NSObject, UIApplicationDelegate {
-  func application(_ application: UIApplication,
-				   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-	FirebaseApp.configure()
 
-	return true
-  }
-}
+
 
 struct LoginView: View {
 	@AppStorage("start") var isStartViewActive: Bool = true
 	let haptics = UINotificationFeedbackGenerator()
-	@UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-	
+	@State var hiddenMenu = false
+	@State var showEmailSignUp = false
+	@State var showEmailSignIn = false
 	
     var body: some View {
 		VStack {
@@ -36,7 +25,12 @@ struct LoginView: View {
 				.frame(width: 250.0, height: 75.0)
 			HStack{
 				Text("👥")
-					
+					.onTapGesture{
+						self.hiddenMenu.toggle()
+					}
+					.sheet(isPresented: $hiddenMenu){
+						StartView()
+					}
 				Text("🫂")
 					.onTapGesture {
 						isStartViewActive = false
@@ -53,7 +47,8 @@ struct LoginView: View {
 			Button(action: {
 				playUiSound(sound: "button_low", type: "wav")
 				self.haptics.notificationOccurred(.success)
-				isStartViewActive = false
+				//isStartViewActive = false
+				self.showEmailSignUp.toggle()
 			}) {
 				Text("Sign up".uppercased())
 					.font(.largeTitle)
@@ -64,13 +59,16 @@ struct LoginView: View {
 					.background(
 						RoundedRectangle(cornerRadius: 25)
 					).accentColor(Color.gray)
-					
+					.sheet(isPresented: $showEmailSignUp){
+						EmailSignUpView()
+					}
 					
 			}
 			Button(action: {
 				playUiSound(sound: "button_select", type: "wav")
 				self.haptics.notificationOccurred(.success)
-				isStartViewActive = false
+				//isStartViewActive = false
+				self.showEmailSignIn.toggle()
 			}) {
 				Text("Email Login".uppercased())
 					.font(.largeTitle)
@@ -82,6 +80,9 @@ struct LoginView: View {
 					.background(
 						RoundedRectangle(cornerRadius: 5)
 					)
+					.sheet(isPresented: $showEmailSignIn){
+						EmailSignIn()
+					}
 					
 					
 			}
@@ -122,11 +123,7 @@ struct LoginView: View {
 					
 					
 			}
-			GoogleSignInButton()
-				.padding()
-						.onTapGesture {
-							isStartViewActive = false
-						}
+			
 			
 			
 		}.preferredColorScheme(.dark)
