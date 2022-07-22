@@ -1,0 +1,215 @@
+{
+  "images" : [
+    {
+      "filename" : "logo2.pdf",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "logo2-1.pdf",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "logo2-2.pdf",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "logo2-3.pdf",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "logo2-4.pdf",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "logo2-5.pdf",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "logo2-6.pdf",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "60x60"
+    },
+    {
+      "filename" : "logo2-7.pdf",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "60x60"
+    },
+    {
+      "idiom" : "ios-marketing",
+      "scale" : "1x",
+      "size" : "1024x1024"
+    },
+    {
+      "filename" : "logo2-8.pdf",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "20x20",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-20.pdf",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "20x20",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-9.pdf",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "20x20",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-21.pdf",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "20x20",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-10.pdf",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "29x29",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-22.pdf",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "29x29",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-11.pdf",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "29x29",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-23.pdf",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "29x29",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-12.pdf",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "40x40",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-24.pdf",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "40x40",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-13.pdf",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "40x40",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-25.pdf",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "40x40",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-14.pdf",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "76x76",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-26.pdf",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "76x76",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-15.pdf",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "76x76",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-27.pdf",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "76x76",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-16.pdf",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "83.5x83.5",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-28.pdf",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "83.5x83.5",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-17.pdf",
+      "idiom" : "ios-marketing",
+      "scale" : "1x",
+      "size" : "1024x1024",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-18.pdf",
+      "idiom" : "ios-marketing",
+      "scale" : "1x",
+      "size" : "1024x1024",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-19.pdf",
+      "idiom" : "ios-marketing",
+      "scale" : "1x",
+      "size" : "1024x1024",
+      "unassigned" : true
+    },
+    {
+      "filename" : "logo2-29.pdf",
+      "idiom" : "ios-marketing",
+      "scale" : "1x",
+      "size" : "1024x1024",
+      "unassigned" : true
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
