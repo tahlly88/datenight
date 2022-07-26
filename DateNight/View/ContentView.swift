@@ -9,7 +9,7 @@ import SwiftUI
 import UIKit
 
 struct ContentView: View {
-    
+    // MARK: Variables
     @AppStorage("start") var isStartViewActive: Bool = true
   // Setting up the variables for telling the app when a button is pressed, a card is dragged
   // and animations that resemble tinder
@@ -23,11 +23,9 @@ struct ContentView: View {
 	@State public var datenightbool = false
 	
     
-    
+    // MARK: functions
   // Setting up the display of the cards
   @State var placeViews: [CardView] = {
-	  
-	  
     var views = [CardView]()
     for index in 0..<2 {
       views.append(CardView(datenight: datenightData[index]))
@@ -37,17 +35,11 @@ struct ContentView: View {
   }()
     
 	public func stopShowing() {
-		
-		
-		
-			print("Removing card")
+		print("Removing card")
 		//datenightData[0].show = false
 		//var datenightBool = datenightData[(lastCardIndex + 1) % datenightData.count]
 		//datenightBool.show = false
 		datenightData[(lastCardIndex - 1) % datenightData.count].show = false
-			
-		
-		
 	}
     
     
@@ -121,7 +113,7 @@ struct ContentView: View {
   
     
 
-    
+    //MARK: Body
   var body: some View {
       ZStack{
           if isStartViewActive {
@@ -232,6 +224,7 @@ struct ContentView: View {
 }
 }
 }
+//MARK: Preview
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
